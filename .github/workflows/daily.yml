@@ -1,0 +1,35 @@
+name: 股票儀表板每日更新
+
+on:
+  schedule:
+    - cron: "0 0 * * 1-5"   # 每天台灣時間 08:00 (UTC 00:00)，週一到週五
+  workflow_dispatch:         # 允許在 GitHub 網頁手動觸發測試
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: 📊 Run stock dashboard
+        run: python stock_dashboard.py
+
+      - name: 💾 Commit & push index.html
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --staged --quiet || git commit -m "📊 update dashboard $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push
