@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="refresh" content="300">
-<title>持股監控 · 2026-07-03 18:15</title>
+<title>持股監控 · 2026-07-06 01:26</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'IBM Plex Mono',Menlo,'Courier New',monospace;background:#0D1117;color:#E6EDF3;padding:18px 14px;min-height:100vh}
@@ -12,12 +12,13 @@ h1{font-size:16px;font-weight:700}
 .sub{font-size:10px;color:#484F58;background:#161B22;border:1px solid #30363D;padding:2px 8px;border-radius:4px}
 .ts{margin-left:auto;font-size:10px;color:#3FB950}
 .sec{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#484F58;margin:16px 0 8px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+@media(max-width:1000px){.cards{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:680px){.cards{grid-template-columns:1fr}}
 .card{background:#161B22;border:1px solid #21262D;border-radius:10px;padding:13px 14px}
 .ctop{display:flex;justify-content:space-between;align-items:start;margin-bottom:5px}
-.tk{font-size:13px;font-weight:700}.nm{font-size:9px;color:#484F58;margin-top:1px}
-.pr{font-size:19px;font-weight:700}.chg{font-size:10px;font-weight:600}
+.tk{font-size:13px;font-weight:700}.nm{font-size:9px;color:#484F58;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pr{font-size:18px;font-weight:700}.chg{font-size:10px;font-weight:600}
 .sp{margin:5px 0 6px}.err{font-size:11px;color:#F87171;margin-top:8px}
 .w52w{display:flex;align-items:center;gap:5px;margin-bottom:2px}
 .wl{font-size:8px;color:#484F58;white-space:nowrap}
@@ -40,19 +41,27 @@ h1{font-size:16px;font-weight:700}
 .bm{font-size:8px;color:#484F58;width:30px;flex-shrink:0}
 .bt{flex:1;height:5px;background:#21262D;border-radius:3px;overflow:hidden}
 .bf{height:100%;border-radius:3px}.bv{font-size:8px;color:#8B949E;width:36px;text-align:right}
-.tw{background:#161B22;border:1px solid #21262D;border-radius:10px;overflow:hidden}
+.tw{background:#161B22;border:1px solid #21262D;border-radius:10px;overflow:hidden;overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:10px}
 thead tr{background:#0D1117}
 th{padding:8px 10px;text-align:left;color:#484F58;font-weight:500;white-space:nowrap}
-td{padding:7px 10px;border-top:1px solid #1A1A2A}
+td{padding:7px 10px;border-top:1px solid #1A1A2A;white-space:nowrap}
 tr:nth-child(even) td{background:#0D1117}
+.acards{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:800px){.acards{grid-template-columns:1fr}}
+.acard{background:#161B22;border:1px solid #21262D;border-radius:10px;padding:13px 15px}
+.ahd{display:flex;align-items:center;gap:7px;margin-bottom:8px}
+.atk{font-size:12px;font-weight:700}.atitle{font-size:11px;font-weight:600;color:#E6EDF3}
+.abody{font-size:11px;color:#8B949E;line-height:1.7;margin-bottom:10px}
+.atags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:9px;padding:2px 8px;border-radius:10px;font-weight:500}
 .ft{margin-top:14px;font-size:9px;color:#30363D;text-align:right}
 </style></head><body>
 
 <div class="hdr">
   <h1>📊 持股監控</h1>
-  <span class="sub">MU · SNDK · MRVL</span>
-  <span class="ts">● 2026-07-03 18:15（台灣時間）· 每 5 分鐘自動重整</span>
+  <span class="sub">MU · SNDK · MRVL · GLW · ALAB</span>
+  <span class="ts">● 2026-07-06 01:26（台灣時間）· 每 5 分鐘自動重整</span>
 </div>
 
 <div class="sec">即時報價 &amp; 個股摘要</div>
@@ -63,7 +72,7 @@ tr:nth-child(even) td{background:#0D1117}
     <div style="text-align:right"><div class="pr">$975.56</div>
     <div class="chg" style="color:#F87171">▼ 5.49%</div></div>
   </div>
-  <div class="sp"></div>
+  <div class="sp"><svg width="88" height="30" viewBox="0 0 88 30" fill="none"><polyline points="0.0,20.8 14.7,0.0 29.3,10.2 44.0,8.6 58.7,7.5 73.3,22.9 88.0,30.0" stroke="#F87171" stroke-width="1.8" fill="none"/></svg></div>
   <div class="w52w"><span class="wl">$103.38</span>
     <div class="wt"><div class="wf" style="width:76%;background:#3B82F6"></div></div>
     <span class="wl">$1,255.00</span></div>
@@ -79,7 +88,7 @@ tr:nth-child(even) td{background:#0D1117}
       <div><div class="el">TTM</div><div class="ev">$44.19</div></div>
       <div><div class="el">預估</div><div class="ev">$149.64</div></div>
       <div><div class="el">P/E</div><div class="ev">22.1x</div></div>
-      <div><div class="el">今日量</div><div class="ev">60.9M</div></div>
+      <div><div class="el">今日量</div><div class="ev">61.8M</div></div>
     </div>
     
   </div>
@@ -90,7 +99,7 @@ tr:nth-child(even) td{background:#0D1117}
     <div style="text-align:right"><div class="pr">$1,745.00</div>
     <div class="chg" style="color:#F87171">▼ 14.13%</div></div>
   </div>
-  <div class="sp"></div>
+  <div class="sp"><svg width="88" height="30" viewBox="0 0 88 30" fill="none"><polyline points="0.0,21.4 14.7,0.0 29.3,12.4 44.0,14.5 58.7,3.1 73.3,15.4 88.0,30.0" stroke="#F87171" stroke-width="1.8" fill="none"/></svg></div>
   <div class="w52w"><span class="wl">$40.10</span>
     <div class="wt"><div class="wf" style="width:74%;background:#8B5CF6"></div></div>
     <span class="wl">$2,354.39</span></div>
@@ -104,9 +113,9 @@ tr:nth-child(even) td{background:#0D1117}
     <div class="et" style="color:#8B5CF6">EPS</div>
     <div class="eg">
       <div><div class="el">TTM</div><div class="ev">$29.32</div></div>
-      <div><div class="el">預估</div><div class="ev">$186.78</div></div>
+      <div><div class="el">預估</div><div class="ev">$202.89</div></div>
       <div><div class="el">P/E</div><div class="ev">59.5x</div></div>
-      <div><div class="el">今日量</div><div class="ev">16.9M</div></div>
+      <div><div class="el">今日量</div><div class="ev">17.3M</div></div>
     </div>
     
   </div>
@@ -117,14 +126,14 @@ tr:nth-child(even) td{background:#0D1117}
     <div style="text-align:right"><div class="pr">$245.29</div>
     <div class="chg" style="color:#F87171">▼ 9.84%</div></div>
   </div>
-  <div class="sp"></div>
+  <div class="sp"><svg width="88" height="30" viewBox="0 0 88 30" fill="none"><polyline points="0.0,12.1 14.7,9.5 29.3,17.7 44.0,11.5 58.7,0.0 73.3,14.7 88.0,30.0" stroke="#F87171" stroke-width="1.8" fill="none"/></svg></div>
   <div class="w52w"><span class="wl">$61.44</span>
     <div class="wt"><div class="wf" style="width:68%;background:#10B981"></div></div>
     <span class="wl">$329.88</span></div>
   <div class="wlb">52 週區間</div>
   <div class="meta">
     <div class="mr"><span class="ml">日高/低</span><span class="mv">$274.95 / $237.20</span></div>
-    <div class="mr"><span class="ml">市值</span><span class="mv">$214.8B</span></div>
+    <div class="mr"><span class="ml">市值</span><span class="mv">$214.6B</span></div>
     <div class="mr"><span class="ml">Beta</span><span class="mv">2.20</span></div>
   </div>
   <div class="eps" style="border-color:#10B98133">
@@ -133,7 +142,61 @@ tr:nth-child(even) td{background:#0D1117}
       <div><div class="el">TTM</div><div class="ev">$2.92</div></div>
       <div><div class="el">預估</div><div class="ev">$6.18</div></div>
       <div><div class="el">P/E</div><div class="ev">84.0x</div></div>
-      <div><div class="el">今日量</div><div class="ev">37.6M</div></div>
+      <div><div class="el">今日量</div><div class="ev">38.6M</div></div>
+    </div>
+    
+  </div>
+</div>
+<div class="card" style="border-left:3px solid #F59E0B">
+  <div class="ctop">
+    <div><div class="tk" style="color:#F59E0B">GLW</div><div class="nm">Corning Incorporated</div></div>
+    <div style="text-align:right"><div class="pr">$196.79</div>
+    <div class="chg" style="color:#F87171">▼ 10.81%</div></div>
+  </div>
+  <div class="sp"><svg width="88" height="30" viewBox="0 0 88 30" fill="none"><polyline points="0.0,25.4 14.7,14.1 29.3,17.6 44.0,0.0 58.7,0.1 73.3,17.9 88.0,30.0" stroke="#F87171" stroke-width="1.8" fill="none"/></svg></div>
+  <div class="w52w"><span class="wl">$51.32</span>
+    <div class="wt"><div class="wf" style="width:66%;background:#F59E0B"></div></div>
+    <span class="wl">$271.78</span></div>
+  <div class="wlb">52 週區間</div>
+  <div class="meta">
+    <div class="mr"><span class="ml">日高/低</span><span class="mv">$223.81 / $193.54</span></div>
+    <div class="mr"><span class="ml">市值</span><span class="mv">$169.4B</span></div>
+    <div class="mr"><span class="ml">Beta</span><span class="mv">1.09</span></div>
+  </div>
+  <div class="eps" style="border-color:#F59E0B33">
+    <div class="et" style="color:#F59E0B">EPS</div>
+    <div class="eg">
+      <div><div class="el">TTM</div><div class="ev">$2.09</div></div>
+      <div><div class="el">預估</div><div class="ev">$4.25</div></div>
+      <div><div class="el">P/E</div><div class="ev">94.2x</div></div>
+      <div><div class="el">今日量</div><div class="ev">20.0M</div></div>
+    </div>
+    
+  </div>
+</div>
+<div class="card" style="border-left:3px solid #EC4899">
+  <div class="ctop">
+    <div><div class="tk" style="color:#EC4899">ALAB</div><div class="nm">Astera Labs, Inc.</div></div>
+    <div style="text-align:right"><div class="pr">$406.42</div>
+    <div class="chg" style="color:#F87171">▼ 5.67%</div></div>
+  </div>
+  <div class="sp"><svg width="88" height="30" viewBox="0 0 88 30" fill="none"><polyline points="0.0,27.3 14.7,27.9 29.3,30.0 44.0,8.9 58.7,0.0 73.3,17.1 88.0,25.2" stroke="#4ADE80" stroke-width="1.8" fill="none"/></svg></div>
+  <div class="w52w"><span class="wl">$88.19</span>
+    <div class="wt"><div class="wf" style="width:77%;background:#EC4899"></div></div>
+    <span class="wl">$499.48</span></div>
+  <div class="wlb">52 週區間</div>
+  <div class="meta">
+    <div class="mr"><span class="ml">日高/低</span><span class="mv">$465.93 / $390.01</span></div>
+    <div class="mr"><span class="ml">市值</span><span class="mv">$69.7B</span></div>
+    <div class="mr"><span class="ml">Beta</span><span class="mv">3.67</span></div>
+  </div>
+  <div class="eps" style="border-color:#EC489933">
+    <div class="et" style="color:#EC4899">EPS</div>
+    <div class="eg">
+      <div><div class="el">TTM</div><div class="ev">$1.46</div></div>
+      <div><div class="el">預估</div><div class="ev">$4.31</div></div>
+      <div><div class="el">P/E</div><div class="ev">278.4x</div></div>
+      <div><div class="el">今日量</div><div class="ev">7.3M</div></div>
     </div>
     
   </div>
@@ -144,32 +207,62 @@ tr:nth-child(even) td{background:#0D1117}
 <div class="vr">
   <div class="vhd">
     <span class="vtk" style="color:#3B82F6">MU</span>
-    <span class="vv">60.9M</span>
-    <span class="vd" style="color:#4ADE80">▲6094356900% vs 7日均</span>
+    <span class="vv">61.8M</span>
+    <span class="vd" style="color:#F87171">▼4% vs 7日均</span>
   </div>
-  <div class="bg"><div class="bl"><span class="bm">今日</span><div class="bt"><div class="bf" style="width:100%;background:#3B82F6"></div></div><span class="bv">60.9M</span></div>
-  <div class="bl"><span class="bm">7日均</span><div class="bt"><div class="bf" style="width:0%;background:#3B82F688"></div></div><span class="bv">1</span></div>
-  <div class="bl"><span class="bm">3月均</span><div class="bt"><div class="bf" style="width:84%;background:#3B82F644"></div></div><span class="bv">51.3M</span></div></div>
+  <div class="bg">
+    <div class="bl"><span class="bm">今日</span><div class="bt"><div class="bf" style="width:32%;background:#3B82F6"></div></div><span class="bv">61.8M</span></div>
+    <div class="bl"><span class="bm">7日均</span><div class="bt"><div class="bf" style="width:100%;background:#3B82F688"></div></div><span class="bv">64.7M</span></div>
+    <div class="bl"><span class="bm">3月均</span><div class="bt"><div class="bf" style="width:83%;background:#3B82F644"></div></div><span class="bv">51.3M</span></div>
+  </div>
 </div>
 <div class="vr">
   <div class="vhd">
     <span class="vtk" style="color:#8B5CF6">SNDK</span>
-    <span class="vv">16.9M</span>
-    <span class="vd" style="color:#4ADE80">▲1687136700% vs 7日均</span>
+    <span class="vv">17.3M</span>
+    <span class="vd" style="color:#4ADE80">▲30% vs 7日均</span>
   </div>
-  <div class="bg"><div class="bl"><span class="bm">今日</span><div class="bt"><div class="bf" style="width:100%;background:#8B5CF6"></div></div><span class="bv">16.9M</span></div>
-  <div class="bl"><span class="bm">7日均</span><div class="bt"><div class="bf" style="width:0%;background:#8B5CF688"></div></div><span class="bv">1</span></div>
-  <div class="bl"><span class="bm">3月均</span><div class="bt"><div class="bf" style="width:81%;background:#8B5CF644"></div></div><span class="bv">13.6M</span></div></div>
+  <div class="bg">
+    <div class="bl"><span class="bm">今日</span><div class="bt"><div class="bf" style="width:43%;background:#8B5CF6"></div></div><span class="bv">17.3M</span></div>
+    <div class="bl"><span class="bm">7日均</span><div class="bt"><div class="bf" style="width:77%;background:#8B5CF688"></div></div><span class="bv">13.3M</span></div>
+    <div class="bl"><span class="bm">3月均</span><div class="bt"><div class="bf" style="width:79%;background:#8B5CF644"></div></div><span class="bv">13.6M</span></div>
+  </div>
 </div>
 <div class="vr">
   <div class="vhd">
     <span class="vtk" style="color:#10B981">MRVL</span>
-    <span class="vv">37.6M</span>
-    <span class="vd" style="color:#4ADE80">▲3755877000% vs 7日均</span>
+    <span class="vv">38.6M</span>
+    <span class="vd" style="color:#4ADE80">▲5% vs 7日均</span>
   </div>
-  <div class="bg"><div class="bl"><span class="bm">今日</span><div class="bt"><div class="bf" style="width:100%;background:#10B981"></div></div><span class="bv">37.6M</span></div>
-  <div class="bl"><span class="bm">7日均</span><div class="bt"><div class="bf" style="width:0%;background:#10B98188"></div></div><span class="bv">1</span></div>
-  <div class="bl"><span class="bm">3月均</span><div class="bt"><div class="bf" style="width:100%;background:#10B98144"></div></div><span class="bv">42.8M</span></div></div>
+  <div class="bg">
+    <div class="bl"><span class="bm">今日</span><div class="bt"><div class="bf" style="width:35%;background:#10B981"></div></div><span class="bv">38.6M</span></div>
+    <div class="bl"><span class="bm">7日均</span><div class="bt"><div class="bf" style="width:96%;background:#10B98188"></div></div><span class="bv">36.9M</span></div>
+    <div class="bl"><span class="bm">3月均</span><div class="bt"><div class="bf" style="width:100%;background:#10B98144"></div></div><span class="bv">42.8M</span></div>
+  </div>
+</div>
+<div class="vr">
+  <div class="vhd">
+    <span class="vtk" style="color:#F59E0B">GLW</span>
+    <span class="vv">20.0M</span>
+    <span class="vd" style="color:#F87171">▼22% vs 7日均</span>
+  </div>
+  <div class="bg">
+    <div class="bl"><span class="bm">今日</span><div class="bt"><div class="bf" style="width:26%;background:#F59E0B"></div></div><span class="bv">20.0M</span></div>
+    <div class="bl"><span class="bm">7日均</span><div class="bt"><div class="bf" style="width:100%;background:#F59E0B88"></div></div><span class="bv">25.8M</span></div>
+    <div class="bl"><span class="bm">3月均</span><div class="bt"><div class="bf" style="width:73%;background:#F59E0B44"></div></div><span class="bv">14.6M</span></div>
+  </div>
+</div>
+<div class="vr">
+  <div class="vhd">
+    <span class="vtk" style="color:#EC4899">ALAB</span>
+    <span class="vv">7.3M</span>
+    <span class="vd" style="color:#4ADE80">▲24% vs 7日均</span>
+  </div>
+  <div class="bg">
+    <div class="bl"><span class="bm">今日</span><div class="bt"><div class="bf" style="width:41%;background:#EC4899"></div></div><span class="bv">7.3M</span></div>
+    <div class="bl"><span class="bm">7日均</span><div class="bt"><div class="bf" style="width:81%;background:#EC489988"></div></div><span class="bv">5.9M</span></div>
+    <div class="bl"><span class="bm">3月均</span><div class="bt"><div class="bf" style="width:87%;background:#EC489944"></div></div><span class="bv">6.3M</span></div>
+  </div>
 </div></div>
 
 <div class="sec">指標彙整</div>
@@ -186,17 +279,17 @@ tr:nth-child(even) td{background:#0D1117}
 <td>$44.19</td>
 <td>$149.64</td>
 <td>22.1x</td>
-<td>60.9M</td>
-<td>—</td>
+<td>61.8M</td>
+<td>64.7M</td>
 <td>$1.10兆</td></tr><tr>
 <td style="color:#8B5CF6;font-weight:700">SNDK</td>
 <td>$1,745.00</td>
 <td style="color:#F87171">▼ 14.13%</td>
 <td>$29.32</td>
-<td>$186.78</td>
+<td>$202.89</td>
 <td>59.5x</td>
-<td>16.9M</td>
-<td>—</td>
+<td>17.3M</td>
+<td>13.3M</td>
 <td>$258.4B</td></tr><tr>
 <td style="color:#10B981;font-weight:700">MRVL</td>
 <td>$245.29</td>
@@ -204,10 +297,56 @@ tr:nth-child(even) td{background:#0D1117}
 <td>$2.92</td>
 <td>$6.18</td>
 <td>84.0x</td>
-<td>37.6M</td>
-<td>—</td>
-<td>$214.8B</td></tr></tbody>
+<td>38.6M</td>
+<td>36.9M</td>
+<td>$214.6B</td></tr><tr>
+<td style="color:#F59E0B;font-weight:700">GLW</td>
+<td>$196.79</td>
+<td style="color:#F87171">▼ 10.81%</td>
+<td>$2.09</td>
+<td>$4.25</td>
+<td>94.2x</td>
+<td>20.0M</td>
+<td>25.8M</td>
+<td>$169.4B</td></tr><tr>
+<td style="color:#EC4899;font-weight:700">ALAB</td>
+<td>$406.42</td>
+<td style="color:#F87171">▼ 5.67%</td>
+<td>$1.46</td>
+<td>$4.31</td>
+<td>278.4x</td>
+<td>7.3M</td>
+<td>5.9M</td>
+<td>$69.7B</td></tr></tbody>
 </table></div>
 
-<p class="ft">資料來源：Yahoo Finance (yfinance) · GitHub Actions 自動執行 · 非投資建議</p>
+<div class="sec">最新分析整理</div>
+<div class="acards">
+<div class="acard" style="border-left:3px solid #3B82F6">
+  <div class="ahd"><span class="atk" style="color:#3B82F6">MU</span><span class="atitle">Micron — HBM超週期主力，缺貨延續至2027年後</span></div>
+  <p class="abody">公司預期記憶體與儲存供給短缺將延續至2027年之後，較先前展望進一步延伸。自身擴產（愛達荷2027年中、新加坡HBM封裝廠同期）在此期間屬營收增項而非稀釋定價權，因產業整體仍處缺貨狀態。南韓三星/海力士的新一輪超級擴產計畫要到5年後才會顯著影響供需，不影響2026-2027窗口。</p>
+  <div class="atags"><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">HBM缺貨延續至27年後</span><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">MU自身擴產=營收增項</span><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">分析師目標價快速上修</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">集體訴訟尾部風險</span><span class="tag" style="background:#1C1402;color:#FCD34D;border:1px solid #854D0E">需留意法說後波動</span></div>
+</div>
+<div class="acard" style="border-left:3px solid #8B5CF6">
+  <div class="ahd"><span class="atk" style="color:#8B5CF6">SNDK</span><span class="atitle">SanDisk — 長約保護結構，波動度全場最高</span></div>
+  <p class="abody">Bernstein分析師估算公司已鎖定約每GB $0.29的底價保護，約60%預期出貨量受長期協議保障，即使極端價格崩跌情境獲利仍優於舊合約結構。但作為純NAND生產商缺乏DRAM/HBM業務緩衝，近期已出現多次單日±10%以上的劇烈波動，OpenAI融資疑慮曾引發連續下跌。</p>
+  <div class="atags"><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">長約鎖定底價保護</span><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">Bernstein目標$3,000</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">波動度全場最高</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">純NAND無業務緩衝</span><span class="tag" style="background:#1C1402;color:#FCD34D;border:1px solid #854D0E">8/13下季法說</span></div>
+</div>
+<div class="acard" style="border-left:3px solid #10B981">
+  <div class="ahd"><span class="atk" style="color:#10B981">MRVL</span><span class="atitle">Marvell — Jensen Huang公開背書，估值透支疑慮</span></div>
+  <p class="abody">COMPUTEX期間獲Nvidia CEO公開稱為「下一個兆元公司」，帶動單日暴漲。FY27/28營收指引成長率全場最高，資料中心互連業務加速。但現價已超越多數分析師均值目標，加上財務長近期出售自家股票，代表這個利多需要後續合約與訂單實際兌現來驗證。</p>
+  <div class="atags"><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">Nvidia公開背書</span><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">FY28營收目標$150億</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">現價超越均值目標</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">財務長近期售股</span><span class="tag" style="background:#1C1402;color:#FCD34D;border:1px solid #854D0E">8/20下季法說</span></div>
+</div>
+<div class="acard" style="border-left:3px solid #F59E0B">
+  <div class="ahd"><span class="atk" style="color:#F59E0B">GLW</span><span class="atitle">Corning — 7/2單日重挫13.6%，估值消化開始</span></div>
+  <p class="abody">GLW近日從高點回落逾13%，主因追蹤本益比達106倍、遠期本益比80倍，加上Q4/Q3/Q1連續三季營收不如預期，估值缺乏容錯空間。CHRO等高管在下跌前密集出售股票，三個月內共出售逾5,400萬美元且零買進，機構信心指標轉弱。GlassBridge技術鞏固長期材料供應地位，但不會加速CPO量產時程；Nvidia認股權證與Amazon/Meta長約仍是結構性支撐。</p>
+  <div class="atags"><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">Nvidia認股權證</span><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">Amazon/Meta長約</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">7/2單日跌13.6%</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">本益比106倍偏高</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">高管密集售股</span><span class="tag" style="background:#1C1402;color:#FCD34D;border:1px solid #854D0E">7/28下季法說觀察</span></div>
+</div>
+<div class="acard" style="border-left:3px solid #EC4899">
+  <div class="ahd"><span class="atk" style="color:#EC4899">ALAB</span><span class="atitle">Astera Labs — 拋物線式上漲，估值透支最明顯</span></div>
+  <p class="abody">納入Nasdaq-100指數帶動被動資金強制買入，股價年初至今上漲逾250%。2026年營收成長預期達81%，PCIe 6.0轉換與AI連接需求提供真實基本面支撐。但即使UBS大幅調高目標價至$400，仍維持中立評級，反映連分析師都認為現階段估值已充分反映樂觀情境，是七檔中「故事跑贏數字」風險最高的一檔。</p>
+  <div class="atags"><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">納入Nasdaq-100指數</span><span class="tag" style="background:#052E16;color:#4ADE80;border:1px solid #166534">2026營收成長81%</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">UBS目標$400但仍中立</span><span class="tag" style="background:#2D0A0A;color:#F87171;border:1px solid #7F1D1D">估值透支風險最高</span><span class="tag" style="background:#1C1402;color:#FCD34D;border:1px solid #854D0E">8/11下季法說</span></div>
+</div></div>
+
+<p class="ft">資料來源：Yahoo Finance (yfinance) · GitHub Actions 自動執行 · 分析內容需人工定期更新 · 非投資建議</p>
 </body></html>
